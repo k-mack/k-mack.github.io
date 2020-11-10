@@ -3,7 +3,7 @@ title: "Hugo and Content Types (RTM)"
 date: 2020-11-07T15:00:00-08:00
 ---
 
-Hugo has not been the most intuitive thing for me to configure, however.
+Hugo has not been the most intuitive thing for me to configure.
 I have spent more time than I would like reading Beautiful Hugo's layouts to understand why the pages look the way they do.
 However, this is the point of what I am doing here:
 learning, writing, and sharing.
