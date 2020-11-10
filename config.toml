@@ -1,4 +1,34 @@
 baseURL = "https://k-mack.gitlab.io/blog/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+defaultContentLanguage = "en"
+enableGitInfo = true
+footnoteReturnLinkContents = "↩"
 theme = "beautifulhugo"
+title = "tech dirt nerd"
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[Params]
+  subtitle = "A Penny for My Thoughts"
+  readingTime = true
+
+[Author]
+  name = "Kevin Macksamie"
+#  email = "email@host.com"
+#  facebook = "username"
+#  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  gitlab = "k-mack"
+  github = "k-mack"
+#  twitter = "username"
+#  reddit = "username"
+  linkedin = "kmacksamie"
+#  xing = "username"
+#  stackoverflow = "users/XXXXXXX/username"
+#  snapchat = "username"
+#  instagram = "username"
+#  youtube = "user/username" # or channel/channelname
+#  soundcloud = "username"
+#  spotify = "username"
+#  bandcamp = "username"
+#  itchio = "username"
+#  keybase = "username"
