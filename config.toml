@@ -1,6 +1,6 @@
 baseURL = "https://k-mack.gitlab.io/blog/"
 defaultContentLanguage = "en"
-enableGitInfo = true
+# enableGitInfo = true
 footnoteReturnLinkContents = "↩"
 theme = "beautifulhugo"
 title = "tech dirt nerd"
