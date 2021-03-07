@@ -24,7 +24,7 @@ PS C:\Program Files\Java\zulu11.41.23-jdk11.0.8> .\bin\keytool.exe -list -cacert
 Enter keystore password:
 
 identrustcommercial [jdk], Jan 16, 2014, trustedCertEntry,
-identrustdstx3 [jdk], Sep 30, 2000, trustedCertEntry,      <-- Bingo!
+identrustdstx3 [jdk], Sep 30, 2000, trustedCertEntry,      # <-- Bingo!
 identrustpublicca [jdk], Jan 16, 2014, trustedCertEntry,
 ```
 
