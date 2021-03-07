@@ -1,4 +1,4 @@
-image: monachus/hugo:v0.75.1
+image: registry.gitlab.com/pages/hugo:0.81.0
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -10,6 +10,8 @@ test:
   - master
 
 pages:
+  before_script:
+  - apk update && apk upgrade && apk add --no-cache git openssh
   script:
   - hugo
   artifacts:
