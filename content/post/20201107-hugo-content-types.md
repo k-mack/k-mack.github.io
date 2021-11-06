@@ -1,6 +1,7 @@
 ---
 title: "Hugo and Content Types (RTM)"
 date: 2020-11-07T15:00:00-08:00
+tags: ["hugo"]
 ---
 
 Hugo has not been the most intuitive thing for me to configure.

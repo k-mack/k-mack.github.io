@@ -1,6 +1,7 @@
 ---
 title: "HTTPS Client Certificate Authentication With Java"
 date: 2021-03-07T15:00:00-08:00
+tags: ["java", "mTLS","vert.x"]
 ---
 
 I recently had to develop a Java client to interface with an internal service over HTTPS that required client certificate authentication.
