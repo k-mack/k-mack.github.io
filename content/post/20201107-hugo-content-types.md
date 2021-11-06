@@ -9,6 +9,8 @@ I have spent more time than I would like reading Beautiful Hugo's layouts to und
 However, this is the point of what I am doing here:
 learning, writing, and sharing.
 
+<!--more-->
+
 As an example to my point above, I was puzzled why the header of my blog post pages included a short, center-aligned horizontal rule underneath the page title.
 
 ![Unwanted horizontal rule underneath post title](/blog/img/unwanted-beautifulhugo-post-header-horizontal-rule.png)

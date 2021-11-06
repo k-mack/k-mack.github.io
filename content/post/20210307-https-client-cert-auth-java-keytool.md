@@ -8,6 +8,8 @@ I recently had to develop a Java client to interface with an internal service ov
 It is not often that I need to dive into SSL certificates, and doing so usually requires me to step back and relearn some things.
 This situation was no different, but in an attempt to burn this stuff into my brain, I am writing about it here.
 
+<!--more-->
+
 ## It's a Trust Thing
 
 First thing's first:
