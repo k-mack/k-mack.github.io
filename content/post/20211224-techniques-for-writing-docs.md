@@ -1,11 +1,11 @@
 ---
-title: "Techniques for Writing Docs in a Markup Language"
+title: "Techniques for Writing Docs in Markup Languages"
 date: 2021-12-24T00:30:00-08:00
 tags: ["tips", "writing", "documentation"]
 ---
 
 Software projects need to have good documentation.
-This improves the software's approachability and impacts its users and contributors.
+This makes the software more approachable and impacts its users and contributors.
 More importantly, it increases the software's signal-to-noise ratio,
 allowing developers to better understand if the software meets their needs.
 This is not revolutionary:
@@ -68,7 +68,7 @@ If an error was found in the document during review,
 then the workflow's recursion kicked in until everyone was satisfied the document.
 
 This was a bit of gut punched to me.
-I joined the company after finishing my master's thesis, which I wrote in LaTeX.
+I joined the company after finishing graduate school where I wrote my reports and thesis in LaTeX.
 I was accustomed to treating documentation like code:
 use a toolchain to transform source files to an output format,
 automate document generation (e.g., with GNU Make),
@@ -108,12 +108,12 @@ Ordered and unordered lists use a default icon and scheme, set by the person who
 Looking back, this rigid word processing environment eased the contribution and merging process in the sense that,
 for example,
 you didn't have Bob breaking his sections into separate Word documents
-while Nancy confined her contributions to one document but wrote a sentence per line.
+while Nancy confined her contributions to one document but wrote each sentence on a separate line.
 Transitioning from Word to markup introduced "developer chaos" in managing documentation contributions.
 This chaos mirrors that which is experienced with coding best practices and styles.
 
 After a bit of back in forth about how to manage the flexibility of markup languages,
-I found some core techniques that help me write good and maintainable documentation.
+I found some core techniques that helped me write good and maintainable documentation.
 
 ## Techniques for Writing Docs
 
