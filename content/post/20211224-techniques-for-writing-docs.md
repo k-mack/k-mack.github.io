@@ -4,17 +4,33 @@ date: 2021-12-24T00:30:00-08:00
 tags: ["tips", "writing", "documentation"]
 ---
 
-Good documentation helps make software approachable.
-This is important for its users and contributors.
+Software projects need to have good documentation.
+This improves the software's approachability and impacts its users and contributors.
+More importantly, it increases the software's signal-to-noise ratio,
+allowing developers to better understand if the software meets their needs.
+This is not revolutionary:
+high-level software developed today
+(i.e., using the C programming language or above)
+presumably uses third-party code, open-source or not.
 Writing software documentation, however, is challenging and thoughtful work.
+This is the reason why technology companies hire technical writers and developer advocates:
+they know good documentation is critical for their product.
+
 Markup languages,
 such as Markdown and AsciiDoc,
-have become essential tools in software development.
+have become essential in developing software documentation.
 Their similarity to programming,
 with toolchains and a lightweight syntax,
 aligns with the developer mindset more so than traditional word processors.
+Documents written in them have a low barrier to read
+(e.g., you need only a text viewer installed, like `more`)
+and easy to read `diff`s,
+making their history easy to track using a version control system.
+
+Like software source code, markup languages allow authors to write the same content a thousand different ways.
 With this type of flexibility and creativity in the documentation process,
-it helps to have techniques to make technical writing as enjoyable as writing code.
+it helps to employ techniques to make writing documentation as enjoyable as writing code
+and to make the documentation source files as aesthetically pleasing, consistent, and efficient as well-styled source code.
 This post shares four such techniques that have improved my writing experience.
 
 <!--more-->
@@ -24,7 +40,7 @@ But first, a short overview of my journey with writing technical documentation :
 ## Personal Context
 
 When I joined the company I am at now in 2012, Microsoft Word was primarily used throughout the company for authoring software documentation.
-It wasn't used for software library API documentation;
+It was not used for software library API documentation;
 tools like Doxygen and Javadoc were used for that.
 Word was for creating
 user and administrator guides,
@@ -101,27 +117,22 @@ I found some techniques that helped me and some of my co-workers to write good d
 
 ## Techniques for Writing Docs
 
-When I came across Asciidoctor in 2015, I was ecstatic.
-It checked so many boxes for me that I couldn't not try to use it where I was already using Markdown.
-I tried to read and watch anything Asciidoctor-related to become better at it.
-That same year I watched [Dan Allen](https://github.com/mojavelinux)'s presentation at Devnexus titled ["Discover the Zen of Writing with Asciidoctor."](https://www.youtube.com/watch?v=Aq2USmIItrs)
-The full presentation is great,
-but if you already know Asciidoctor,
-or use another markup language for documentation,
-I encourage you to jump to his section on [Zen techniques](https://www.youtube.com/watch?v=Aq2USmIItrs&t=3454s).
+In 2015, I found and watched [Dan Allen](https://github.com/mojavelinux)'s presentation at Devnexus titled [\"Discover the Zen of Writing with Asciidoctor.\"](https://www.youtube.com/watch?v=Aq2USmIItrs).
+The full presentation is great whether you use Asciidoctor or not.
+However, the gold for authors is his section on [Zen techniques](https://www.youtube.com/watch?v=Aq2USmIItrs&t=3454s).
 
 **Full disclosure:
-My techniques below are from Dan Allen's 2015 Devnexus presentation (see links above).
+The techniques below are from Dan Allen's 2015 Devnexus presentation (see links above).
 Full credit goes to him.
 I am merely echoing them in an attempt to share them and attest to how awesome they are.**
 
-Let's dive into the techniques.
+After giving credit to where credit is due, let's dive into some of the techniques that Dan shares in his presentation.
 Note that this post could be titled something like "4 Writing Techniques Every Programmer Should Know," but it sounds like clickbait to me.
-Then again, I'm just generally not good with creating titles.
+Then again, I am just generally not good with creating titles.
 
 ### 1. Like Code, Don't Repeat Yourself
 
-Since writing technical documents is like writing code: don’t repeat yourself.
+Since writing technical documents is like writing code, don’t repeat yourself.
 Just like copy-and-pasting code throughout an application can result in inconsistencies,
 duplicating the same text throughout your documents can leave them fragmented when one section is modified but the others are not.
 
@@ -140,7 +151,7 @@ This is a powerful writing technique for a number of reasons:
 
 1. It taps into your programming mindset and aligns with the technical, structured workflow that you know and use everywhere else.
 2. If a change occurs, it is localized to that line (i.e., no wrapping) which means the diff is incredibly easy to read.
-3. Long sentences run over 80 columns which means you’re probably ranting or meandering.
+3. Long sentences run over 80 columns, which means you’re probably ranting or meandering.
    Technical documents are not novels; they should be concise and to the point.
    Of course, some sentences are going to be over 80 characters, but if you’re pushing 100 characters, consider revising.
    In other words, be judicious.
@@ -153,7 +164,7 @@ This is a powerful writing technique for a number of reasons:
 Commenting is powerful in code and just as powerful in documents.
 Comments in your document allow you to save off chunks of text without being rendered in your generated document.
 This is important for keeping around thoughts and objectives for paragraphs, sections, etc.
-This helps the other authors/editors understand what you are trying to accomplish.
+This helps the other authors and editors understand what you are trying to accomplish.
 
 Not all markup formats support comments.
 If the one you use supports them, then don’t be afraid to use them.
@@ -166,5 +177,6 @@ This is also a way to shorten sentences to fit on a single line and to keep from
 ## Conclusion
 
 The goal of this post was to share techniques to help make writing good software documentation enjoyable with a markup language.
+The four techniques shared were credited to Dan Allen of the Asciidoctor project.
 
 _Fin_.
