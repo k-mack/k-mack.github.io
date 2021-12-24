@@ -1,7 +1,7 @@
 ---
 title: "Techniques for Writing Docs in a Markup Language"
-date: 2021-12-23T08:30:00-08:00
-tags: ["writing", "docs", "asciidoctor"]
+date: 2021-12-24T00:30:00-08:00
+tags: ["tips", "writing", "documentation"]
 ---
 
 Good documentation helps make software approachable.
@@ -9,18 +9,28 @@ This is important for its users and contributors.
 Writing software documentation, however, is challenging and thoughtful work.
 Markup languages,
 such as Markdown and AsciiDoc,
-have seemingly become the dominate
-This post shares four techniques that have helped improved how I write documentation.
+have become essential tools in software development.
+Their similarity to programming,
+with toolchains and a lightweight syntax,
+aligns with the developer mindset more so than traditional word processors.
+With this type of flexibility and creativity in the documentation process,
+it helps to have techniques to make technical writing as enjoyable as writing code.
+This post shares four such techniques that have improved my writing experience.
 
 <!--more-->
 
-But first, a short overview of my journey with writing documentation :).
+But first, a short overview of my journey with writing technical documentation :).
 
 ## Personal Context
 
-When I joined the company I am at now in 2012, Microsoft Word was used for authoring software documentation.
-It thankfully wasn't used for API documentation, like Doxygen, Javadoc, or Rustdoc provides.
-This was for user and administrator guides, tutorials, frequently asked questions (FAQs), etc.
+When I joined the company I am at now in 2012, Microsoft Word was primarily used throughout the company for authoring software documentation.
+It wasn't used for software library API documentation;
+tools like Doxygen and Javadoc were used for that.
+Word was for creating
+user and administrator guides,
+tutorials,
+frequently asked questions (FAQs),
+etc.
 The primary reason for using Word was that customers expected documentation as Word documents,
 and the customers were application users, not developers.
 
@@ -33,7 +43,7 @@ the person had to
 obtain a copy of the latest version,
 rename the file such that its name was suffixed with the author's initials
 (e.g., `User_Guide-km.docx`),
-be sure to turn on Word's Track Changes feature,
+turn on Word's Track Changes feature,
 make the modifications,
 and send the modified file to the maintainer.
 The maintainer was responsible for merging the edits of all the contributors into the document.
@@ -45,19 +55,19 @@ This was a bit of gut punched to me.
 I joined the company after finishing my master's thesis, which I wrote in LaTeX.
 I was accustomed to treating documentation like code:
 use a toolchain to transform source files to an output format,
-automate the process with GNU Make,
-and committing changes to version control.
+automate document generation (e.g., with GNU Make),
+and commit changes to version control.
 My brain was wired to think about content first and its presentation second
 (e.g., `*.cpp -> *.o -> {libmylib.a, libmylib.so}`).
 
 After the company made the move to Git and when Markdown became a hit with the staff,
-teams started to use markup formats to write software documentation.
+teams started to use markup languages to write software documentation.
 Contributors were branching and merging edits to Markdown files in Git.
 Each change to the Markdown files could be easily seen via `git diff` and `git show`.
 It was contributor-friendly,
 and the world seemed right and just :P.
 The last step was to convert the final, peer-reviewed Markdown content into a Word document.
-Tools like pandoc were found to be helpful here.
+Tools like pandoc were found to be helpful for this.
 As time went on, things kept getting better:
 customers became more open to PDF and HTML,
 teams moved from Markdown to Asciidoctor to create richer documents,
@@ -68,21 +78,26 @@ and as is usual for software developers,
 technique and style became a topic of discussion.
 One of the nice things about Word is that it puts all authors into the same frame of mind.
 The structure of Word is uniform and universal.
-It matches how we were taught to write:
+It matches how we are taught to write from an early age:
 pull out a blank piece of paper and start writing from left to right, top to bottom.
-In Word, at least to my knowledge, you can't separate content from presentation:
+Made a mistake?
+Erase, use Wite-Out, or start over.
+There is no commenting out sentences or variable substitution.
+What you write is what you get,
+and Word follows this.
+At least to my knowledge, you can't separate content from presentation in Word:
 Sentences are delimited by a period and a space.
 Paragraphs are delimited by a newline.
 Ordered and unordered lists use a default icon and scheme, set by the person who created the Word document.
-This facilitated the contribution and merging process in the sense that,
+Looking back, this rigid word processing environment eased the contribution and merging process in the sense that,
 for example,
 you didn't have Bob breaking his sections into separate Word documents
 while Nancy confined her contributions to one document but wrote a sentence per line.
-Transitioning from Word to markup introduced "developer chaos" to managing documentation contributions.
+Transitioning from Word to markup introduced "developer chaos" in managing documentation contributions.
 This chaos mirrors that which is experienced with coding best practices and styles.
 
 After a bit of back in forth about how to manage the flexibility of markup source files,
-I found some techniques that help me and some of my co-workers to write good documentation.
+I found some techniques that helped me and some of my co-workers to write good documentation.
 
 ## Techniques for Writing Docs
 
@@ -101,8 +116,8 @@ Full credit goes to him.
 I am merely echoing them in an attempt to share them and attest to how awesome they are.**
 
 Let's dive into the techniques.
-Note that this post could be titled something like "4 Writing Techniques Every Programmer Should Know," but it sounds too clickbaity for me.
-I'm also just generally not good with creating titles.
+Note that this post could be titled something like "4 Writing Techniques Every Programmer Should Know," but it sounds like clickbait to me.
+Then again, I'm just generally not good with creating titles.
 
 ### 1. Like Code, Don't Repeat Yourself
 
@@ -150,6 +165,6 @@ This is also a way to shorten sentences to fit on a single line and to keep from
 
 ## Conclusion
 
-The goal of this post was to share some techniques to help write good software documentation with a markup language.
+The goal of this post was to share techniques to help make writing good software documentation enjoyable with a markup language.
 
 _Fin_.
