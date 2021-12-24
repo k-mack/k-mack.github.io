@@ -112,8 +112,8 @@ while Nancy confined her contributions to one document but wrote a sentence per 
 Transitioning from Word to markup introduced "developer chaos" in managing documentation contributions.
 This chaos mirrors that which is experienced with coding best practices and styles.
 
-After a bit of back in forth about how to manage the flexibility of markup source files,
-I found some techniques that helped me and some of my co-workers to write good documentation.
+After a bit of back in forth about how to manage the flexibility of markup languages,
+I found some core techniques that help me write good and maintainable documentation.
 
 ## Techniques for Writing Docs
 
@@ -132,7 +132,7 @@ Then again, I am just generally not good with creating titles.
 
 ### 1. Like Code, Don't Repeat Yourself
 
-Since writing technical documents is like writing code, don’t repeat yourself.
+Since writing technical documents in a markup language is like writing code, don’t repeat yourself.
 Just like copy-and-pasting code throughout an application can result in inconsistencies,
 duplicating the same text throughout your documents can leave them fragmented when one section is modified but the others are not.
 
@@ -173,6 +173,36 @@ If the one you use supports them, then don’t be afraid to use them.
 
 A number of documentation formats support variables that can encapsulate information used repeatedly throughout a document.
 This is also a way to shorten sentences to fit on a single line and to keep from repeating yourself.
+I like to use Asciidoctor's attributes to store the long and abbreviated names of the application I am writing about:
+
+```asciidoctor
+// attributes
+:app-abbr: App
+:app-name: Long Application Name Here
+:app-uri-downloads: https://sourceforge.net/
+:app-uri-downloads-link: {app-uri-downloads}[Downloads]
+
+== Introduction
+
+{app-name} ({app-abbr}) is an application that *blah blah blah*.
+
+// ...
+
+== Getting Started
+
+Get started with {app-abbr} by downloading a pre-built binary from {app-uri-downloads-link}.
+
+// ...
+
+== FAQs
+
+[quote]
+Where can I download {app-abbr}?
+
+Pre-built binaries can be downloaded from {app-uri-downloads-link}.
+
+// ...
+```
 
 ## Conclusion
 
