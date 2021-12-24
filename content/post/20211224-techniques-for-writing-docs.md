@@ -117,7 +117,7 @@ I found some techniques that helped me and some of my co-workers to write good d
 
 ## Techniques for Writing Docs
 
-In 2015, I found and watched [Dan Allen](https://github.com/mojavelinux)'s presentation at Devnexus titled [\"Discover the Zen of Writing with Asciidoctor.\"](https://www.youtube.com/watch?v=Aq2USmIItrs).
+In 2015, I found and watched [Dan Allen](https://github.com/mojavelinux)'s presentation at Devnexus titled "[Discover the Zen of Writing with Asciidoctor.](https://www.youtube.com/watch?v=Aq2USmIItrs)".
 The full presentation is great whether you use Asciidoctor or not.
 However, the gold for authors is his section on [Zen techniques](https://www.youtube.com/watch?v=Aq2USmIItrs&t=3454s).
 
