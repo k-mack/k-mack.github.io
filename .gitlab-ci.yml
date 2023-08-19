@@ -3,21 +3,40 @@ image: registry.gitlab.com/pages/hugo:0.117.0
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-test:
+stages:
+- build
+- test
+- prepare
+
+ernie:
+  image: gradle:7-jdk17-alpine
+  stage: build
+  script:
+  - cd ernie-sitting
+  - gradle asciidoctor
+  artifacts:
+    paths:
+    - ernie-sitting/build/docs/
+
+.hugo:
   before_script:
-  - apk add -X https://nl.alpinelinux.org/alpine/edge/main -u alpine-keys --allow-untrusted
   - apk update && apk upgrade && apk add --no-cache git openssh
   script:
+  # Copy the asciidoctor-generated artifacts from "ernie" into the static directory
+  - cp -r ernie-sitting/build/docs/asciidoc/* static
   - hugo
+  needs:
+  - ernie
+
+test:
+  extends: .hugo
+  stage: test
   except:
   - master
 
 pages:
-  before_script:
-  - apk add -X https://nl.alpinelinux.org/alpine/edge/main -u alpine-keys --allow-untrusted
-  - apk update && apk upgrade && apk add --no-cache git openssh
-  script:
-  - hugo
+  extends: .hugo
+  stage: prepare
   artifacts:
     paths:
     - public
