@@ -4,6 +4,9 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 test:
+  before_script:
+  - apk add -X https://nl.alpinelinux.org/alpine/edge/main -u alpine-keys --allow-untrusted
+  - apk update && apk upgrade && apk add --no-cache git openssh
   script:
   - hugo
   except:
@@ -11,6 +14,7 @@ test:
 
 pages:
   before_script:
+  - apk add -X https://nl.alpinelinux.org/alpine/edge/main -u alpine-keys --allow-untrusted
   - apk update && apk upgrade && apk add --no-cache git openssh
   script:
   - hugo
