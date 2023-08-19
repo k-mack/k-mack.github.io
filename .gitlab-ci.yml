@@ -1,4 +1,4 @@
-image: registry.gitlab.com/pages/hugo:0.89.1
+image: registry.gitlab.com/pages/hugo:0.117.0
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
