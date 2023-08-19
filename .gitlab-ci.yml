@@ -4,41 +4,41 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 stages:
-- build
-- test
-- prepare
+  - build
+  - test
+  - prepare
 
 ernie:
   image: gradle:7-jdk17-alpine
   stage: build
   script:
-  - cd ernie-sitting
-  - gradle asciidoctor
+    - cd ernie-sitting
+    - gradle asciidoctor
   artifacts:
     paths:
-    - ernie-sitting/build/docs/
+      - ernie-sitting/build/docs/
 
 .hugo:
   before_script:
-  - apk update && apk upgrade && apk add --no-cache git openssh
+    - apk update && apk upgrade && apk add --no-cache git openssh
   script:
-  # Copy the asciidoctor-generated artifacts from "ernie" into the static directory
-  - cp -r ernie-sitting/build/docs/asciidoc/* static
-  - hugo
+    # Copy the asciidoctor-generated artifacts from "ernie" into the static directory
+    - cp -r ernie-sitting/build/docs/asciidoc/* static
+    - hugo
   needs:
-  - ernie
+    - ernie
 
 test:
   extends: .hugo
   stage: test
   except:
-  - master
+    - master
 
 pages:
   extends: .hugo
   stage: prepare
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
