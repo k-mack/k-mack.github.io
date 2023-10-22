@@ -1,4 +1,4 @@
-baseURL = "https://k-mack.gitlab.io/blog/"
+baseURL = "https://kevinmacksa.me/"
 defaultContentLanguage = "en"
 enableGitInfo = true
 footnoteReturnLinkContents = "↩"

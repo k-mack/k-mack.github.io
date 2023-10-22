@@ -1,6 +1,7 @@
 # Blog
 
 My personal blog at <https://k-mack.gitlab.io/blog/>.
+Thanks for [Porkbun](https://porkbun.com/), the site is also at <https://kevinmacksa.me/>.
 
 ## Cloning
 
