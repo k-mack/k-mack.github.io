@@ -11,17 +11,17 @@ Here are the highlights:
 
 More importantly, what am I trying to do here?
 I write a lot of technical content at my day job, but I don't get to add any of my own personality to it, if you know what I mean.
-I have to be very, well, _professional_, which means I
+I have to be very, well, _professional_, which means
 
-* avoid personal pronouns,
-* avoid contractions
-* am terse,
-* don't use adverbs unless I have data to justify their use, and
-* avoid talking about work that is underdeveloped.
+* I avoid personal pronouns, adverbs, and contractions;
+* I keep sentences terse;
+* and I don't include underdeveloped designs and implementations.
 
 There are more restrictions, but you get the idea.
-This site is space for me to write about what I want, _how_ I want.
+This site is a space for me to write about what I want, _how_ I want.
 Thanks for checking it out!
 
-BTW, [gully-fluff is pocket lint.](https://books.google.com/books?id=JRuNMHNcu5cC&newbks=1&newbks_redir=0&lpg=PA2319&dq=%22Gully-Fluff%22&pg=PA2319#v=onepage&q=%22Gully-Fluff%22&f=false)
-But it's also hilarious when an [angry owl says it.](https://youtu.be/U3fyC0MkdtI?si=XC-nLvMYimr_Yser)
+BTW, [gully-fluff is pocket lint,](https://books.google.com/books?id=JRuNMHNcu5cC&newbks=1&newbks_redir=0&lpg=PA2319&dq=%22Gully-Fluff%22&pg=PA2319#v=onepage&q=%22Gully-Fluff%22&f=false),
+which I think is a good metaphor for my writings:
+they're kind of the remaining bits of creativity I can dig up at the end of the day.
+But truthfully, I just love hearing the word [said by an angry owl.](https://youtu.be/U3fyC0MkdtI?si=u27RXImr9UCCOL-O&t=9)
