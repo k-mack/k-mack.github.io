@@ -13,7 +13,7 @@ learning, writing, and sharing.
 
 As an example to my point above, I was puzzled why the header of my blog post pages included a short, center-aligned horizontal rule underneath the page title.
 
-![Unwanted horizontal rule underneath post title](/blog/img/unwanted-beautifulhugo-post-header-horizontal-rule.png)
+![Unwanted horizontal rule underneath post title](/img/unwanted-beautifulhugo-post-header-horizontal-rule.png)
 
 I followed Hugo's quick start guide to generate a new site and create a post.
 
