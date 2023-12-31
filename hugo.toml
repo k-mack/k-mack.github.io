@@ -8,7 +8,7 @@ title = "k-mack"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-[Params]
+[params]
   logo = "img/me-in-a-circle.jpg" # Expecting square dimensions
   homeTitle = " " # Set a different text for the header on the home page
   subtitle = "My Programming Gully-Fluff"
@@ -17,52 +17,53 @@ pygmentsUseClasses = true
   wordCount = true
   hideAuthor = true
   commit = "https://gitlab.com/k-mack/blog/-/commit/"
-#  favicon = "img/favicon.ico"
-#  dateFormat = "January 2, 2006"
-#  rss = true
-#  comments = true
-#  useHLJS = true
-#  socialShare = true
-#  delayDisqus = true
-#  showRelatedPosts = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-#  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
+# favicon = "img/favicon.ico"
+# dateFormat = "January 2, 2006"
+# rss = true
+# comments = true
+# useHLJS = true
+# socialShare = true
+# delayDisqus = true
+# showRelatedPosts = true
+# gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+# disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
 
-[Author]
+[params.author]
   name = "Kevin Macksamie"
-#  email = "email@host.com"
-#  facebook = "username"
-#  googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+# email = "email@host.com"
+# facebook = "username"
+# googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
   gitlab = "k-mack"
   github = "k-mack"
-#  twitter = "username"
-#  reddit = "username"
+# twitter = "username"
+# reddit = "username"
   linkedin = "kmacksamie"
-#  xing = "username"
-#  stackoverflow = "users/XXXXXXX/username"
-#  snapchat = "username"
-#  instagram = "username"
-#  youtube = "user/username" # or channel/channelname
-#  soundcloud = "username"
-#  spotify = "username"
-#  bandcamp = "username"
-#  itchio = "username"
-#  keybase = "username"
+# xing = "username"
+# stackoverflow = "users/XXXXXXX/username"
+# snapchat = "username"
+# instagram = "username"
+# youtube = "user/username" # or channel/channelname
+# soundcloud = "username"
+# spotify = "username"
+# bandcamp = "username"
+# itchio = "username"
+# keybase = "username"
 
-  [[menu.main]]
-    name = "Blog"
-    url = ""
-    weight = 1
+[menus]
+[[menus.main]]
+  name = "Blog"
+  url = ""
+  weight = 1
 
-  [[menu.main]]
-    name = "Tags"
-    url = "tags"
-    weight = 3
+[[menus.main]]
+  name = "Tags"
+  url = "tags"
+  weight = 3
 
-  [[menu.main]]
-    name = "About Me"
-    url = "page/about/"
-    weight = 2
+[[menus.main]]
+  name = "About Me"
+  url = "page/about/"
+  weight = 2
 
 [frontmatter]
   # With `enableGitInfo = true`, configure a post's "last modified" date to be pulled from Git as a last resort;
