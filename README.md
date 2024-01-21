@@ -18,3 +18,11 @@ Update the repository's submodules by running the following command:
 ```bash
 git submodule update --remote
 ```
+
+## Nix
+
+Hop into a development shell with everything you shell:
+
+```bash
+nix develop
+```
