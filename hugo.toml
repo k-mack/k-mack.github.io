@@ -8,6 +8,11 @@ enableRobotsTXT = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+# Hugo deprecated these but Beautifulhugo still uses them
+[author]
+name = "Kevin Macksamie"
+website = "https://kevinmacksa.me/"
+
 [params]
   logo = "img/me-in-a-circle.jpg" # Expecting square dimensions
   homeTitle = "Kevin Macksamie"
