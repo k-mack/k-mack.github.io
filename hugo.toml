@@ -3,15 +3,14 @@ defaultContentLanguage = "en"
 enableGitInfo = true
 footnoteReturnLinkContents = "↩"
 theme = "beautifulhugo"
-title = "k-mack"
 
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
 [params]
   logo = "img/me-in-a-circle.jpg" # Expecting square dimensions
-  homeTitle = " " # Set a different text for the header on the home page
-  subtitle = "My Programming Gully-Fluff"
+  homeTitle = "Kevin Macksamie"
+  subtitle = "Programming Gully-Fluff"
   mainSections = ["post"]
   readingTime = true
   wordCount = true
