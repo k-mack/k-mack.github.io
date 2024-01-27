@@ -3,6 +3,7 @@ defaultContentLanguage = "en"
 enableGitInfo = true
 footnoteReturnLinkContents = "↩"
 theme = "beautifulhugo"
+enableRobotsTXT = true
 
 pygmentsCodeFences = true
 pygmentsUseClasses = true
