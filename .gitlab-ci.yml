@@ -20,11 +20,13 @@ ernie:
 
 .hugo:
   before_script:
-    - apk update && apk upgrade && apk add --no-cache git openssh
+    - apk update && apk upgrade && apk add --no-cache git openssh brotli
   script:
     # Copy the asciidoctor-generated artifacts from "ernie" into the static directory
     - cp -r ernie-sitting/build/docs/asciidoc/* static
-    - hugo
+    - hugo --minify
+    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec gzip -v -f -k --best {} \;
+    - find public -type f -regex '.*\.\(htm\|html\|txt\|text\|js\|css\)$' -exec brotli -v -f -k --best {} \;
   needs:
     - ernie
 

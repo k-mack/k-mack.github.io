@@ -59,7 +59,11 @@
 	with pkgs;
 	{
           devShells.default = mkShell {
-	    packages = [ hugo ];
+	    packages = [
+	      brotli
+	      gzip
+	      hugo
+            ];
 	  };
 	}
       );
