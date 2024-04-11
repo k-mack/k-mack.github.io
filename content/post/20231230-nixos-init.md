@@ -33,14 +33,15 @@ The bad news is that it took a couple of days, which translated to me working lo
 To be clear, I'm not slinging mud at Debian, and I take complete ownership of what happened.
 As I wrote above, there were things I should have done to mitigate and protect myself from this breakage.
 
-But you know what? Working in that environment was beginning to feel bloated and brittle.
+But you know what?
+Working in that environment was beginning to feel bloated and brittle.
 Again, that's not specific to Debian.
-I felt that same way when I used CentOS, and OpenSuse before that.
+I felt that same way back when I used CentOS, and OpenSuse before that.
 I tend to install a lot of packages as time goes on, and I don't usually remove packages out of fear of breaking something.
 Thinking back on it, I didn't need eight (8!) versions of Java installed in `/usr/java`.
 I didn't even need Java at the system level.
-I really only needed the version of Java for the project I was working on at the moment.
-The same goes for Node.js and all the various CLI tools I get through that ecosystem.
+I really only needed the version of Java for the project I was working on in that moment.
+The same goes for Node.js and all the various CLI tools I use from that ecosystem.
 Docker helps and did help with managing and containing a project's software, but I didn't containerize every tool I used (but maybe I should of!), and Docker images aren't cheap.
 I already had to put my VM on an external hard drive because it took too much space on my laptop.
 Suffice it to say that the problem was, is, and will continue to be me.
@@ -67,7 +68,9 @@ I'm reading the [NixOS & Flakes Book](https://nixos-and-flakes.thiscute.world/) 
 I have successfully used Nix flakes to model my minimum system along with my user profile using Home Manager.
 I'm managing the configuration with Git and have pushed it to my work's GitLab repository.
 (Oh yeah, this whole thing is within the context of managing my development environment at work.
-If things works out well, I might expand it to include managing my personal laptop.)
-I'm excited and terrified.
+If things go well, I might expand it to include managing my personal laptop.)
+I'm both excited and terrified.
 
 I hope to write more about this journey as it unfolds.
+
+_Fin_.

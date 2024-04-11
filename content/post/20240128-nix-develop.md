@@ -16,10 +16,10 @@ I've found I learn the most by looking at the Nix codebase or other people's fla
 
 After learning how to use `nix shell` to drop into a development environment for this blog,
 the next logical step seemed to write a flake that codified this and would allow me to simply type `nix develop`.
-`nix shell` solved the initial problem for me, but it installs whatever version of Hugo is found in `nix-unstable`.
-I want to install the same version of Hugo as the one I use for CI to create the blog before it is published.
+`nix shell` solved the initial problem for me, but it installs whatever version of Hugo is found in the `nixpkgs-unstable` branch.
+I want to always install the same version of Hugo as the one I use for CI to create the blog before it is published.
 
-The Hugo package in Nix is derived using `buildGoModule`, which makes sense since Hugo is an application.
+The Hugo package in Nix is derived using `buildGoModule`, which makes sense since Hugo is Go application.
 All I needed to do was to tweak the version and `fetchFromGitHub` attributes within the function.
 
 My initial attempt at this was to use
