@@ -1,4 +1,4 @@
-baseURL = "https://kevinmacksa.me/"
+baseURL = "https://kevinmacksamie.com/"
 defaultContentLanguage = "en"
 enableGitInfo = true
 footnoteReturnLinkContents = "↩"
@@ -11,7 +11,7 @@ pygmentsUseClasses = true
 # Hugo deprecated these but Beautifulhugo still uses them
 [author]
 name = "Kevin Macksamie"
-website = "https://kevinmacksa.me/"
+website = "https://kevinmacksamie.com/"
 
 [params]
   logo = "img/me-in-a-circle.jpg" # Expecting square dimensions
